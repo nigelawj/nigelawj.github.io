@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Nigel's Resume</title>
+</head>
+
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-6">
+          <img src="img/me.png" alt="">
+        </div>
+        <div class="col-lg-9 col-md-6">
+          <div class="d-flex flex-column">
+            <div class="p-3 bg-dark text-white">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <h1 class="mr-auto">Nigel Ang Wei Jun</h1>
+                <div>
+                  <a href="https://www.linkedin.com/in/nigelawj/" class="text-white">
+                    <i class="fab fa-2x fa-linkedin p-4"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://github.com/nigelawj" class="text-white">
+                    <i class="fab fa-2x fa-github p-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-black text-center">
+              Bachelor of Engineering (Computer Science) at Nanyang Technological University
+            </div>
+
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-2 btn-outline-dark" data-toggle="collapse" data-target="#about-me">
+                  <i class="fas fa-home fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">About Me</span>
+                </div>
+                <div class="port-item p-2 bg-black" data-toggle="collapse" data-target="#education">
+                  <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Education</span>
+                </div>
+                <div class="port-item p-2 btn-outline-dark" data-toggle="collapse" data-target="#projects">
+                  <i class="fas fa-folder-open fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Projects</span>
+                </div>
+                <div class="port-item p-2 bg-black" data-toggle="collapse" data-target="#contact">
+                  <i class="fas fa-envelope fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SKILLS -->
+    <div id="about-me" class="collapse show">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Seeking opportunities to further develop and pick up new skills</h2>
+        <p class="lead">Currently expanding my skill set alongside exploring areas of interest in developing full-stack applications, as well as Machine Learning/Deep Learning</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Skills</h3>
+        <hr>
+        <h4>Python</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:80%"></div>
+        </div>
+        <h4>JavaScript</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:80%"></div>
+        </div>
+        <h4>Java</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:60%"></div>
+        </div>
+        <h4>Powershell</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:60%"></div>
+        </div>
+        <h4>C, C++</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:50%"></div>
+        </div>
+        <h4>HTML5/CSS/Bootstrap</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:50%"></div>
+        </div>
+        <h4>Picking up new skills</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <hr>
+        <div>
+          <button type="button" class="btn btn-primary btn-sm">Deep Learning</button>
+          <button type="button" class="btn btn-primary btn-sm">Machine Learning</button>
+          <button type="button" class="btn btn-primary btn-sm">ReactJS</button>
+          <button type="button" class="btn btn-primary btn-sm">Natural Language Processing</button>
+          <button type="button" class="btn btn-primary btn-sm">Linux</button>
+          <hr>
+          <button type="button" class="btn btn-primary btn-sm">Tensorflow/Keras</button>
+          <button type="button" class="btn btn-primary btn-sm">PyTorch</button>
+          <button type="button" class="btn btn-primary btn-sm">Elasticsearch/Filebeat</button>
+          <button type="button" class="btn btn-primary btn-sm">Firebase</button>
+          <button type="button" class="btn btn-primary btn-sm">MongoDB</button>
+          <button type="button" class="btn btn-primary btn-sm">Scikit-Learn</button>
+          <button type="button" class="btn btn-primary btn-sm">NodeJS</button>
+          <button type="button" class="btn btn-primary btn-sm">Express</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="education" class="collapse">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Education</h2>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <p class="bold mr-auto">Bachelor of Engineering (Computer Science): 2017-Present (Expected 2021)</p>
+          <p class="lead">CGPA: 4.46</p>
+        </div>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Work Experience</h3>
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">DSO National Laboratories</h4>
+              <p class="p-2 mb-3 bg-dark text-white">Intern</p>
+              <p class="card-text">
+                Involved in the development of an Intranet Search Engine (ISE).
+                </br></br>
+                Wrote a simple server to replace a Tesseract module, offering better performance
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                NodeJS, Express, Java
+              </p>
+              <hr>
+              <p class="card-text">
+                Prototyped and tested a Python daemon script, to process documents and tags them via Latent Dirichlet Allocation, update the Elasticsearch document fields, to allow searching for similar documents in the webservice GUI, and inserting of tagger's logs via Filebeat
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Topic Modelling
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: Jan 2020 - May 2020</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Coders Passion</h4>
+              <p class="p-2 mb-3 bg-dark text-white">Freelance Trainer</p>
+              <p class="card-text">
+                Assigned to participating schools to teach computer programming and robotics courses in Scratch
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Scratch
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2018</h6>
+            </div>
+            <hr>
+            <div class="card-body">
+              <h4 class="card-title">In3Labs</h4>
+              <p class="p-2 mb-3 bg-dark text-white">Tutor</p>
+              <p class="card-text">
+                Conducted courses on robotics and programming languages including Python, Arduino and Scratch
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Python, Arduino, Scratch
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2018 - 2019</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Prime Diesel Spares Pte Ltd</h4>
+              <p class="p-2 mb-3 bg-dark text-white">Intern</p>
+              <p class="card-text">
+                Performed inventory stock checks, prepared incoming orders, customer quotations and assisted in organising and performing deliveries
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2017</h6>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Singapore Armed Forces</h4>
+              <p class="p-2 mb-3 bg-dark text-white">Artillery Operator</p>
+              <p class="card-text">
+                Operated the High Mobility Artillery Rocket System (HIMARS), trained in every role of the HIMARS crew, resupply operations, loading and unloading of rocket pods and maintenance
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2015 - 2017</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Certificates</h3>
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Bloomberg L.P.</h4>
+              <p class="card-text">
+                Bloomberg Market Concepts
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2018</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Upcode Academy Pte Ltd</h4>
+              <p class="card-text">
+                Data Science, Deep Learning and Machine Learning with Python
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2018</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Singapore Workforce Skills Qualifications</h4>
+              <p class="card-text">
+                Forklift License
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2016</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="collapse">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Personal Projects</h2>
+        <p class="card-text">
+          Some of my personal projects, as well as links to their repositories, if available.
+          </br>
+          </br>
+          Click on the photos to enlarge them.
+        </p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3 class='text-primary mr-auto'>Deep Learning</h3>
+        <p>
+          Simple <a href='https://github.com/nigelawj/deep-learning' class='text-primary'>starter .py and .ipynb codes for Neural Networks</a> such as CNNs, RNNs, Stacked Autoencoders and Restricted Boltzmann Machines, as well as codes for Transfer Learning & Fine Tuning, Deep Reinforcement Learning and Distributed Training
+        </p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="img/dl/dl-1.png" data-toggle="lightbox">
+              <img src="img/dl/dl-1.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/dl/dl-2.png" data-toggle="lightbox">
+              <img src="img/dl/dl-2.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/dl/dl-3.png" data-toggle="lightbox">
+              <img src="img/dl/dl-3.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/dl/dl-4.png" data-toggle="lightbox">
+              <img src="img/dl/dl-4.png" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h3 class='text-primary mr-auto'>Machine Learning</h3>
+        <p>
+          Basic Scikit-learn usage with <a href='https://github.com/nigelawj/machine-learning' class='text-primary'>several classifications and regression models</a>, dealing with missing data, encoding data, cross-validation and hyperparameter tuning
+        </p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="img/ml/ml-1.png" data-toggle="lightbox">
+              <img src="img/ml/ml-1.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-2.png" data-toggle="lightbox">
+              <img src="img/ml/ml-2.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-3.png" data-toggle="lightbox">
+              <img src="img/ml/ml-3.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-4.png" data-toggle="lightbox">
+              <img src="img/ml/ml-4.png" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h3 class='text-primary mr-auto'>Natural Language Processing</h3>
+        <p>
+          Starter codes for performing <a href='https://github.com/nigelawj/machine-learning' class='text-primary'>Topic Modelling</a>, such as codes for Latent Dirichlet Allocation, Non-negative Matrix Factorisation, and a daemon script which obtains topic tags of documents via LDA
+        </p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="img/ml/ml-1.png" data-toggle="lightbox">
+              <img src="img/ml/ml-1.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-2.png" data-toggle="lightbox">
+              <img src="img/ml/ml-2.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-3.png" data-toggle="lightbox">
+              <img src="img/ml/ml-3.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/ml/ml-4.png" data-toggle="lightbox">
+              <img src="img/ml/ml-4.png" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h3 class='mr-auto'><span class='text-primary'>ReactJS</span> Projects</h3>
+        <p>Created a <a href="https://github.com/nigelawj/naidzel-clothing" class='text-primary'>ReactJS application</a> of a clothing apparel store</p>
+        <p>A <a href="https://github.com/nigelawj/tmt-app" class='text-primary'>full-stack MERN web application</a>, to display and store results of registered users completing the TMT, a neuropsychological test of visual attention and task switching</p>
+        <p>Created a basic <a href="https://github.com/nigelawj/it-logger" class='text-primary'>to-do list for developers</a>, in ReactJS, using Redux</p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="img/reactjs/react-1.png" data-toggle="lightbox">
+              <img src="img/reactjs/react-1.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/reactjs/react-2.png" data-toggle="lightbox">
+              <img src="img/reactjs/react-2.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/reactjs/react-3.png" data-toggle="lightbox">
+              <img src="img/reactjs/react-3.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/reactjs/react-4.png" data-toggle="lightbox">
+              <img src="img/reactjs/react-4.png" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h3><span class='text-primary'>JavaScript</span> Projects</h3>
+        <p>Created an <a href="https://github.com/nigelawj/devcamper-api" class='text-primary'>API with Node Express and MongoDB</a>, with routing and authentication via JSONWebTokens</p>
+        <p>Simple <a href="https://github.com/nigelawj/tesseract-test" class='text-primary'>Express server</a> hosting Tesseract</p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="img/js/js-1.png" data-toggle="lightbox">
+              <img src="img/js/js-1.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/js/js-2.png" data-toggle="lightbox">
+              <img src="img/js/js-2.png" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="collapse">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Contact</h2>
+        <div class="card bg-black">
+          <div class="card-body">
+            <h4 class="card-title">Emails & Inquiries</h4>
+            <span class="p-2 mb-3 bg-dark text-white">Drop me an email at <a href='mailto:nigelawj@gmail.com' class='text-white'>nigelawj@gmail.com</a></span>
+            <hr>
+            <h4 class="card-title">Socials</h4>
+            <a href='https://github.com/nigelawj' class="p-2 mb-3 bg-dark text-white">Github</a>
+            <br><br>
+            <a href='https://www.linkedin.com/in/nigelawj/' class="p-2 mb-3 bg-dark text-white">LinkedIn</a>
+            <hr>
+            <p class="card-text">
+              Warm regards, 
+              <br><br>
+              Nigel Ang Wei Jun
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6 mr-auto">
+          <a href="#" class="btn btn-outline-light">
+            <i class="fas fa-arrow-up"></i> Return to top
+          </a>
+        </div>
+        <div>
+          <span>&copy;</span>
+          <span id='year'></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <script>
+    $('.port-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+      e.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
