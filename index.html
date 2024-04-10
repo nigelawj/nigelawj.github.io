@@ -1,482 +1,834 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+            integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Nigel's Resume</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Nigel's Resume</title>
-</head>
+    <body>
+        <div class="container">
+            <header id="main-header">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="img/me.png" alt="" />
+                    </div>
+                    <div class="col-lg-9 col-md-6">
+                        <div class="d-flex flex-column">
+                            <div class="p-3 bg-dark text-white">
+                                <div
+                                    class="d-flex flex-row justify-content-between align-items-center"
+                                >
+                                    <h1 class="mr-auto">Nigel Ang Wei Jun</h1>
+                                    <div>
+                                        <a
+                                            href="https://www.linkedin.com/in/nigelawj/"
+                                            class="text-white"
+                                        >
+                                            <i
+                                                class="fab fa-2x fa-linkedin p-4"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a
+                                            href="https://github.com/nigelawj"
+                                            class="text-white"
+                                        >
+                                            <i
+                                                class="fab fa-2x fa-github p-4"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-<body>
-  <div class="container">
-    <header id="main-header">
-      <div class="row no-gutters">
-        <div class="col-lg-3 col-md-6">
-          <img src="img/me.png" alt="">
-        </div>
-        <div class="col-lg-9 col-md-6">
-          <div class="d-flex flex-column">
-            <div class="p-3 bg-dark text-white">
-              <div class="d-flex flex-row justify-content-between align-items-center">
-                <h1 class="mr-auto">Nigel Ang Wei Jun</h1>
-                <div>
-                  <a href="https://www.linkedin.com/in/nigelawj/" class="text-white">
-                    <i class="fab fa-2x fa-linkedin p-4"></i>
-                  </a>
+                            <div class="p-3 bg-black text-center">
+                                Engineer at DSTA
+                            </div>
+
+                            <div>
+                                <div
+                                    class="d-flex flex-row text-white align-items-stretch text-center"
+                                >
+                                    <div
+                                        class="port-item p-2 btn-outline-dark"
+                                        data-toggle="collapse"
+                                        data-target="#about-me"
+                                    >
+                                        <i
+                                            class="fas fa-home fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >About Me</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-2 bg-black"
+                                        data-toggle="collapse"
+                                        data-target="#education"
+                                    >
+                                        <i
+                                            class="fas fa-graduation-cap fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Education</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-2 btn-outline-dark"
+                                        data-toggle="collapse"
+                                        data-target="#projects"
+                                    >
+                                        <i
+                                            class="fas fa-folder-open fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Projects</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-2 bg-black"
+                                        data-toggle="collapse"
+                                        data-target="#contact"
+                                    >
+                                        <i
+                                            class="fas fa-envelope fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Contact</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                  <a href="https://github.com/nigelawj" class="text-white">
-                    <i class="fab fa-2x fa-github p-4"></i>
-                  </a>
+            </header>
+
+            <!-- SKILLS -->
+            <div id="about-me" class="collapse show">
+                <div class="card card-body bg-primary text-white py-5">
+                    <h3>
+                        Pursuing a career in developing applications powered by
+                        Deep Learning
+                    </h3>
+                    <p></p>
                 </div>
-              </div>
-            </div>
 
-            <div class="p-3 bg-black text-center">
-              Bachelor of Engineering (Computer Science) at Nanyang Technological University
-            </div>
-
-            <div>
-              <div class="d-flex flex-row text-white align-items-stretch text-center">
-                <div class="port-item p-2 btn-outline-dark" data-toggle="collapse" data-target="#about-me">
-                  <i class="fas fa-home fa-2x d-block"></i>
-                  <span class="d-none d-sm-block">About Me</span>
+                <div class="card card-body py-5">
+                    <h3>Skills</h3>
+                    <hr />
+                    <h4>Python</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 80%"
+                        ></div>
+                    </div>
+                    <h4>Docker</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 70%"
+                        ></div>
+                    </div>
+                    <h4>FastAPI</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 60%"
+                        ></div>
+                    </div>
+                    <h4>Picking up new skills</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 100%"
+                        ></div>
+                    </div>
+                    <hr />
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Deep Learning
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Machine Learning
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Elasticsearch/Kibana/Logstash
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Docker
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Tensorflow/PyTorch
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Apache NiFi
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            FastAPI
+                        </button>
+                        <hr />
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Javascript/TypeScript
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Powershell
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            Java
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            ReactJS
+                        </button>
+                    </div>
                 </div>
-                <div class="port-item p-2 bg-black" data-toggle="collapse" data-target="#education">
-                  <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                  <span class="d-none d-sm-block">Education</span>
+            </div>
+
+            <!-- EDUCATION -->
+            <div id="education" class="collapse">
+                <div class="card card-body bg-primary text-white py-5">
+                    <h2>Education</h2>
+                    <div
+                        class="d-flex flex-row justify-content-between align-items-center"
+                    >
+                        <p class="bold mr-auto">
+                            Bachelor of Engineering (Computer Science):
+                            2017-2021
+                        </p>
+                        <p class="lead">CGPA: 4.44</p>
+                    </div>
                 </div>
-                <div class="port-item p-2 btn-outline-dark" data-toggle="collapse" data-target="#projects">
-                  <i class="fas fa-folder-open fa-2x d-block"></i>
-                  <span class="d-none d-sm-block">Projects</span>
+
+                <div class="card card-body py-5">
+                    <h3>Work Experience</h3>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">DSTA</h4>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Engineer
+                                </p>
+                                <p class="card-text">
+                                    Systems Development
+                                    <br /><br />
+                                    Lead Developer
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Python, FastAPI, Docker, Daemon, Bash, Deep
+                                    Learning
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2021 - Present</h6>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    DSO National Laboratories
+                                </h4>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Intern
+                                </p>
+                                <p class="card-text">
+                                    Involved in the development of an Intranet
+                                    Search Engine (ISE).
+                                    <br /><br />
+                                    Wrote a simple server to replace a Tesseract
+                                    module, with reduced runtime and overhead
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    NodeJS, Express, Java
+                                </p>
+                                <hr />
+                                <p class="card-text">
+                                    Prototyped, tested and deployed a Python
+                                    daemon script, to process documents and tags
+                                    them via Latent Dirichlet Allocation, update
+                                    the Elasticsearch document fields, to allow
+                                    searching for similar documents in the
+                                    webservice GUI, and inserting of tagger's
+                                    logs via Filebeat
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Python, Topic Modelling,
+                                    Elasticsearch/Filebeat, Testing
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2020</h6>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Coders Passion</h4>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Freelance Trainer
+                                </p>
+                                <p class="card-text">
+                                    Assigned to participating schools to teach
+                                    computer programming and robotics courses in
+                                    Scratch
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Scratch
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2018</h6>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">In3Labs</h4>
+                                <p class="p-2 mb-3 bg-dark text-white">Tutor</p>
+                                <p class="card-text">
+                                    Conducted courses on robotics and
+                                    programming languages including Python,
+                                    Arduino and Scratch
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Python, Arduino, Scratch
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2018 - 2019</h6>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Prime Diesel Spares Pte Ltd
+                                </h4>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Intern
+                                </p>
+                                <p class="card-text">
+                                    Performed inventory stock checks, prepared
+                                    incoming orders, customer quotations and
+                                    assisted in organising and performing
+                                    deliveries
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2017</h6>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Singapore Armed Forces
+                                </h4>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Artillery Operator
+                                </p>
+                                <p class="card-text">
+                                    Operated the High Mobility Artillery Rocket
+                                    System (HIMARS), trained in every role of
+                                    the HIMARS crew, resupply operations,
+                                    loading and unloading of rocket pods and
+                                    maintenance
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2015 - 2017</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="port-item p-2 bg-black" data-toggle="collapse" data-target="#contact">
-                  <i class="fas fa-envelope fa-2x d-block"></i>
-                  <span class="d-none d-sm-block">Contact</span>
+
+                <div class="card card-body py-5">
+                    <h3>Certificates</h3>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Scrum Alliance</h4>
+                                <p class="card-text">Scrum Master</p>
+                                <hr />
+                                <p class="card-text">woof</p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2023</h6>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">DeepLearning.AI</h4>
+                                <p class="card-text">
+                                    TensorFlow Developer Specialization:
+                                    <br /><br />
+                                    Build and train neural networks in
+                                    TensorFlow: CNN, RNN and NLP, etc.
+                                </p>
+                                <hr />
+                                <p class="card-text">
+                                    Deep Learning:
+                                    <br /><br />
+                                    Foundation in Computer Vision, Natural
+                                    Language Processing, Hyperparameter tuning,
+                                    regularisation and optimisation, etc.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2020</h6>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Bloomberg L.P.</h4>
+                                <p class="card-text">
+                                    Bloomberg Market Concepts
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2018</h6>
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Upcode Academy Pte Ltd
+                                </h4>
+                                <p class="card-text">
+                                    Data Science, Deep Learning and Machine
+                                    Learning with Python
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2018</h6>
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Singapore Workforce Skills Qualifications
+                                </h4>
+                                <p class="card-text">Forklift License</p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">2016</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <!-- PROJECTS -->
+            <div id="projects" class="collapse">
+                <div class="card card-body bg-primary text-white py-5">
+                    <h2>Personal Projects</h2>
+                </div>
+
+                <div class="card card-body py-5">
+                    <h3 class="text-primary mr-auto">Deep Learning</h3>
+                    <p>
+                        Final Year Project on learning generalised features from
+                        EEG using Deep Learning for a Cognitive Brain-Computer
+                        Interface. Involved in data collection, preparation of
+                        experiments and co-authoring a paper
+                        <a
+                            href="https://ieeexplore.ieee.org/document/9629575/"
+                            class="text-primary"
+                            >accepted</a
+                        >
+                        in EMBC 2021
+                    </p>
+                    <p>
+                        Achieved
+                        <a
+                            href="https://github.com/nigelawj/cz4042"
+                            class="text-primary"
+                            >SOTA accuracy on a variant of MMAL-Net</a
+                        >, a Deep Learning framework for Fine-Grained Image
+                        Classification via experiments with Multitask Learning
+                        and RandAugment
+                    </p>
+                    <p>
+                        Simple
+                        <a
+                            href="https://github.com/nigelawj/deep-learning"
+                            class="text-primary"
+                            >starter .py and .ipynb codes for Neural Networks</a
+                        >
+                        such as CNNs, RNNs, Stacked Autoencoders and Restricted
+                        Boltzmann Machines, as well as codes for Transfer
+                        Learning & Fine Tuning, Deep Reinforcement Learning and
+                        Distributed Training
+                    </p>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <a href="img/dl/dl-1.jpg" data-toggle="lightbox">
+                                <img
+                                    src="img/dl/dl-1.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/dl/dl-2.jpeg" data-toggle="lightbox">
+                                <img
+                                    src="img/dl/dl-2.jpeg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/dl/dl-3.png" data-toggle="lightbox">
+                                <img
+                                    src="img/dl/dl-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/dl/dl-4.png" data-toggle="lightbox">
+                                <img
+                                    src="img/dl/dl-4.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="text-primary mr-auto">Machine Learning</h3>
+                    <p>
+                        Several
+                        <a
+                            href="https://github.com/nigelawj/store-item-demand-forecasting"
+                            class="text-primary"
+                            >Kaggle notebook competition entries</a
+                        >, using Feature Engineering and several models
+                        (XGBoost, Random Forest Regressor, Feedforward Neural
+                        Network, etc.)
+                    </p>
+                    <p>
+                        Basic Scikit-learn usage with
+                        <a
+                            href="https://github.com/nigelawj/machine-learning"
+                            class="text-primary"
+                            >several classifications and regression models</a
+                        >, dealing with missing data, encoding data,
+                        cross-validation and hyperparameter tuning
+                    </p>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-1.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-2.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-3.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-4.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-4.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="text-primary mr-auto">
+                        Natural Language Processing
+                    </h3>
+                    <p>
+                        Starter codes for performing
+                        <a
+                            href="https://github.com/nigelawj/machine-learning"
+                            class="text-primary"
+                            >Topic Modelling</a
+                        >, such as codes for Latent Dirichlet Allocation,
+                        Non-negative Matrix Factorisation, and a daemon script
+                        which obtains topic tags of documents via LDA
+                    </p>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-1.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-2.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-3.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/ml/ml-4.png" data-toggle="lightbox">
+                                <img
+                                    src="img/ml/ml-4.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="mr-auto">
+                        <span class="text-primary">ReactJS</span> Projects
+                    </h3>
+                    <p>
+                        Created a
+                        <a
+                            href="https://github.com/nigelawj/naidzel-clothing"
+                            class="text-primary"
+                            >ReactJS application</a
+                        >
+                        of a clothing apparel store
+                    </p>
+                    <p>
+                        A
+                        <a
+                            href="https://github.com/nigelawj/tmt-app"
+                            class="text-primary"
+                            >full-stack MERN web application</a
+                        >, to display and store results of registered users
+                        completing the TMT, a neuropsychological test of visual
+                        attention and task switching
+                    </p>
+                    <p>
+                        Created a basic
+                        <a
+                            href="https://github.com/nigelawj/it-logger"
+                            class="text-primary"
+                            >to-do list for developers</a
+                        >, in ReactJS, using Redux
+                    </p>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <a
+                                href="img/reactjs/react-1.png"
+                                data-toggle="lightbox"
+                            >
+                                <img
+                                    src="img/reactjs/react-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a
+                                href="img/reactjs/react-2.png"
+                                data-toggle="lightbox"
+                            >
+                                <img
+                                    src="img/reactjs/react-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a
+                                href="img/reactjs/react-3.png"
+                                data-toggle="lightbox"
+                            >
+                                <img
+                                    src="img/reactjs/react-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a
+                                href="img/reactjs/react-4.png"
+                                data-toggle="lightbox"
+                            >
+                                <img
+                                    src="img/reactjs/react-4.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3>
+                        <span class="text-primary">JavaScript</span> Projects
+                    </h3>
+                    <p>
+                        Created an
+                        <a
+                            href="https://github.com/nigelawj/devcamper-api"
+                            class="text-primary"
+                            >API with Node Express and MongoDB</a
+                        >, with routing and authentication via JSONWebTokens
+                    </p>
+                    <p>
+                        Simple
+                        <a
+                            href="https://github.com/nigelawj/tesseract-test"
+                            class="text-primary"
+                            >Express server</a
+                        >
+                        hosting Tesseract
+                    </p>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <a href="img/js/js-1.png" data-toggle="lightbox">
+                                <img
+                                    src="img/js/js-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="img/js/js-2.png" data-toggle="lightbox">
+                                <img
+                                    src="img/js/js-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div id="contact" class="collapse">
+                <div class="card card-body py-5">
+                    <h3>Contact</h3>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Emails & Inquiries</p>
+                                <a
+                                    href="mailto:nigelawj@gmail.com"
+                                    class="p-2 mb-3 bg-dark text-white"
+                                    >nigelawj@gmail.com</a
+                                >
+                                <hr />
+                                <p class="card-text">Socials</p>
+                                <a
+                                    href="https://www.linkedin.com/in/nigelawj/"
+                                    class="p-2 mb-3 bg-dark text-white"
+                                    >LinkedIn</a
+                                >
+                                <br /><br />
+                                <a
+                                    href="https://github.com/nigelawj"
+                                    class="p-2 mb-3 bg-dark text-white"
+                                    >Github</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer id="main-footer" class="p-5 bg-dark text-white">
+                <div class="row">
+                    <div class="col-md-6 mr-auto">
+                        <a href="#" class="btn btn-outline-light">
+                            <i class="fas fa-arrow-up"></i> Return to top
+                        </a>
+                    </div>
+                    <div>
+                        <span>&copy;</span>
+                        <span class="current-year"></span>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </div>
-    </header>
 
-    <!-- SKILLS -->
-    <div id="about-me" class="collapse show">
-      <div class="card card-body bg-primary text-white py-5">
-        <h3>Seeking opportunities in a career to further develop and expand my skill set</h3>
-        <p>alongside exploring areas of interest in developing full-stack web applications, as well as in Deep Learning, Data Science.</p>
-      </div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-      <div class="card card-body py-5">
-        <h3>Skills</h3>
-        <hr>
-        <h4>Python</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:80%"></div>
-        </div>
-        <h4>JavaScript</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:70%"></div>
-        </div>
-        <h4>ReactJS</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:60%"></div>
-        </div>
-        <h4>Picking up new skills</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:100%"></div>
-        </div>
-        <hr>
-        <div>
-          <button type="button" class="btn btn-primary btn-sm">Deep Learning</button>
-          <button type="button" class="btn btn-primary btn-sm">Machine Learning</button>
-          <button type="button" class="btn btn-primary btn-sm">scikit-learn</button>
-          <button type="button" class="btn btn-primary btn-sm">Linux</button>
-          <button type="button" class="btn btn-primary btn-sm">Tensorflow</button>
-          <button type="button" class="btn btn-primary btn-sm">PyTorch</button>
-          <button type="button" class="btn btn-primary btn-sm">NodeJS</button>
-          <button type="button" class="btn btn-primary btn-sm">Express</button>
-          <button type="button" class="btn btn-primary btn-sm">MongoDB</button>
-          <button type="button" class="btn btn-primary btn-sm">Natural Language Processing</button>
-          <button type="button" class="btn btn-primary btn-sm">Java</button>
-          <button type="button" class="btn btn-primary btn-sm">Git</button>
-          <hr>
-          <button type="button" class="btn btn-primary btn-sm">Powershell</button>
-          <button type="button" class="btn btn-primary btn-sm">Elasticsearch/Filebeat</button>
-          <button type="button" class="btn btn-primary btn-sm">Firebase</button>
-          <button type="button" class="btn btn-primary btn-sm">HTML5/CSS/Bootstrap</button>
-          <button type="button" class="btn btn-primary btn-sm">C, C++</button>
-        </div>
-      </div>
-    </div>
+        <script>
+            $(".port-item").click(function () {
+                $(".collapse").collapse("hide");
+            });
 
-    <!-- EDUCATION -->
-    <div id="education" class="collapse">
-      <div class="card card-body bg-primary text-white py-5">
-        <h2>Education</h2>
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <p class="bold mr-auto">Bachelor of Engineering (Computer Science): 2017-Present (Expected May 2021)</p>
-          <p class="lead">CGPA: 4.44</p>
-        </div>
-      </div>
+            $(document).on("click", '[data-toggle="lightbox"]', function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
 
-      <div class="card card-body py-5">
-        <h3>Work Experience</h3>
-
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">DSO National Laboratories</h4>
-              <p class="p-2 mb-3 bg-dark text-white">Intern</p>
-              <p class="card-text">
-                Involved in the development of an Intranet Search Engine (ISE).
-                </br></br>
-                Wrote a simple server to replace a Tesseract module, with reduced runtime and overhead
-              </p>
-              <p class="p-2 mb-3 bg-dark text-white">
-                NodeJS, Express, Java
-              </p>
-              <hr>
-              <p class="card-text">
-                Prototyped, tested and deployed a Python daemon script, to process documents and tags them via Latent Dirichlet Allocation, update the Elasticsearch document fields, to allow searching for similar documents in the webservice GUI, and inserting of tagger's logs via Filebeat
-              </p>
-              <p class="p-2 mb-3 bg-dark text-white">
-                Python, Topic Modelling, Elasticsearch/Filebeat, Testing
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2020</h6>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Coders Passion</h4>
-              <p class="p-2 mb-3 bg-dark text-white">Freelance Trainer</p>
-              <p class="card-text">
-                Assigned to participating schools to teach computer programming and robotics courses in Scratch
-              </p>
-              <p class="p-2 mb-3 bg-dark text-white">
-                Scratch
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2018</h6>
-            </div>
-            <hr>
-            <div class="card-body">
-              <h4 class="card-title">In3Labs</h4>
-              <p class="p-2 mb-3 bg-dark text-white">Tutor</p>
-              <p class="card-text">
-                Conducted courses on robotics and programming languages including Python, Arduino and Scratch
-              </p>
-              <p class="p-2 mb-3 bg-dark text-white">
-                Python, Arduino, Scratch
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2018 - 2019</h6>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Prime Diesel Spares Pte Ltd</h4>
-              <p class="p-2 mb-3 bg-dark text-white">Intern</p>
-              <p class="card-text">
-                Performed inventory stock checks, prepared incoming orders, customer quotations and assisted in organising and performing deliveries
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2017</h6>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Singapore Armed Forces</h4>
-              <p class="p-2 mb-3 bg-dark text-white">Artillery Operator</p>
-              <p class="card-text">
-                Operated the High Mobility Artillery Rocket System (HIMARS), trained in every role of the HIMARS crew, resupply operations, loading and unloading of rocket pods and maintenance
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2015 - 2017</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-body py-5">
-        <h3>Certificates</h3>
-
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">DeepLearning.AI</h4>
-              <p class="card-text">
-                TensorFlow Developer Specialization:
-                <br><br>
-                Build and train neural networks in TensorFlow: CNN, RNN and NLP, etc.
-              </p>
-              <hr>
-              <p class="card-text">
-                Deep Learning:
-                <br><br>
-                Foundation in Computer Vision, Natural Language Processing, Hyperparameter tuning, regularisation and optimisation, etc.
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2020</h6>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Bloomberg L.P.</h4>
-              <p class="card-text">
-                Bloomberg Market Concepts
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2018</h6>
-            </div>
-
-            <div class="card-body">
-              <h4 class="card-title">Upcode Academy Pte Ltd</h4>
-              <p class="card-text">
-                Data Science, Deep Learning and Machine Learning with Python
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2018</h6>
-            </div>
-            
-            <div class="card-body">
-              <h4 class="card-title">Singapore Workforce Skills Qualifications</h4>
-              <p class="card-text">
-                Forklift License
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 class="text-muted">2016</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECTS -->
-    <div id="projects" class="collapse">
-      <div class="card card-body bg-primary text-white py-5">
-        <h2>Personal Projects</h2>
-        <p class="card-text">
-          Some of my personal projects, as well as links to their repositories, if available.
-          </br>
-          </br>
-          Click on the photos to enlarge them.
-        </p>
-      </div>
-
-      <div class="card card-body py-5">
-        <h3 class='text-primary mr-auto'>Deep Learning</h3>
-        <p>
-          Final Year Project on learning generalised features from EEG using Deep Learning for a Cognitive Brain-Computer Interface. Involved in data collection, preparation of experiments and co-authoring a paper submission for EMBC 2021
-        </p>
-        <p>
-          Achieved <a href='https://github.com/nigelawj/cz4042' class='text-primary'>SOTA accuracy on a variant of MMAL-Net</a>, a Deep Learning framework for Fine-Grained Image Classification via experiments with Multitask Learning and RandAugment
-        </p>
-        <p>
-          Simple <a href='https://github.com/nigelawj/deep-learning' class='text-primary'>starter .py and .ipynb codes for Neural Networks</a> such as CNNs, RNNs, Stacked Autoencoders and Restricted Boltzmann Machines, as well as codes for Transfer Learning & Fine Tuning, Deep Reinforcement Learning and Distributed Training
-        </p>
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="img/dl/dl-1.jpg" data-toggle="lightbox">
-              <img src="img/dl/dl-1.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/dl/dl-2.jpeg" data-toggle="lightbox">
-              <img src="img/dl/dl-2.jpeg" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/dl/dl-3.png" data-toggle="lightbox">
-              <img src="img/dl/dl-3.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/dl/dl-4.png" data-toggle="lightbox">
-              <img src="img/dl/dl-4.png" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <hr>
-        <h3 class='text-primary mr-auto'>Machine Learning</h3>
-        <p>
-          Several <a href="https://github.com/nigelawj/store-item-demand-forecasting" class='text-primary'>Kaggle notebook competition entries</a>, using Feature Engineering and several models (XGBoost, Random Forest Regressor, Feedforward Neural Network, etc.)
-        </p>
-        <p>
-          Basic Scikit-learn usage with <a href='https://github.com/nigelawj/machine-learning' class='text-primary'>several classifications and regression models</a>, dealing with missing data, encoding data, cross-validation and hyperparameter tuning
-        </p>
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="img/ml/ml-1.png" data-toggle="lightbox">
-              <img src="img/ml/ml-1.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-2.png" data-toggle="lightbox">
-              <img src="img/ml/ml-2.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-3.png" data-toggle="lightbox">
-              <img src="img/ml/ml-3.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-4.png" data-toggle="lightbox">
-              <img src="img/ml/ml-4.png" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <hr>
-        <h3 class='text-primary mr-auto'>Natural Language Processing</h3>
-        <p>
-          Starter codes for performing <a href='https://github.com/nigelawj/machine-learning' class='text-primary'>Topic Modelling</a>, such as codes for Latent Dirichlet Allocation, Non-negative Matrix Factorisation, and a daemon script which obtains topic tags of documents via LDA
-        </p>
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="img/ml/ml-1.png" data-toggle="lightbox">
-              <img src="img/ml/ml-1.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-2.png" data-toggle="lightbox">
-              <img src="img/ml/ml-2.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-3.png" data-toggle="lightbox">
-              <img src="img/ml/ml-3.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/ml/ml-4.png" data-toggle="lightbox">
-              <img src="img/ml/ml-4.png" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <hr>
-        <h3 class='mr-auto'><span class='text-primary'>ReactJS</span> Projects</h3>
-        <p>Created a <a href="https://github.com/nigelawj/naidzel-clothing" class='text-primary'>ReactJS application</a> of a clothing apparel store</p>
-        <p>A <a href="https://github.com/nigelawj/tmt-app" class='text-primary'>full-stack MERN web application</a>, to display and store results of registered users completing the TMT, a neuropsychological test of visual attention and task switching</p>
-        <p>Created a basic <a href="https://github.com/nigelawj/it-logger" class='text-primary'>to-do list for developers</a>, in ReactJS, using Redux</p>
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="img/reactjs/react-1.png" data-toggle="lightbox">
-              <img src="img/reactjs/react-1.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/reactjs/react-2.png" data-toggle="lightbox">
-              <img src="img/reactjs/react-2.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/reactjs/react-3.png" data-toggle="lightbox">
-              <img src="img/reactjs/react-3.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/reactjs/react-4.png" data-toggle="lightbox">
-              <img src="img/reactjs/react-4.png" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <hr>
-        <h3><span class='text-primary'>JavaScript</span> Projects</h3>
-        <p>Created an <a href="https://github.com/nigelawj/devcamper-api" class='text-primary'>API with Node Express and MongoDB</a>, with routing and authentication via JSONWebTokens</p>
-        <p>Simple <a href="https://github.com/nigelawj/tesseract-test" class='text-primary'>Express server</a> hosting Tesseract</p>
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="img/js/js-1.png" data-toggle="lightbox">
-              <img src="img/js/js-1.png" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="img/js/js-2.png" data-toggle="lightbox">
-              <img src="img/js/js-2.png" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div id="contact" class="collapse">
-      <div class="card card-body py-5">
-        <h3>Contact</h3>
-
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <p class="card-text">
-                Emails & Inquiries
-              </p>
-              <a href='mailto:nigelawj@gmail.com'class="p-2 mb-3 bg-dark text-white">nigelawj@gmail.com</a>
-              <hr>
-              <p class="card-text">
-                Socials
-              </p>
-              <a href='https://www.linkedin.com/in/nigelawj/' class="p-2 mb-3 bg-dark text-white">LinkedIn</a>
-              <br><br>
-              <a href='https://github.com/nigelawj' class="p-2 mb-3 bg-dark text-white">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- FOOTER -->
-    <footer id="main-footer" class="p-5 bg-dark text-white">
-      <div class="row">
-        <div class="col-md-6 mr-auto">
-          <a href="#" class="btn btn-outline-light">
-            <i class="fas fa-arrow-up"></i> Return to top
-          </a>
-        </div>
-        <div>
-          <span>&copy;</span>
-          <span id='year'></span>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
-  <script>
-    $('.port-item').click(function () {
-      $('.collapse').collapse('hide');
-    });
-
-    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
-      e.preventDefault();
-      $(this).ekkoLightbox();
-    });
-
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-  </script>
-</body>
-
+            // Get the current year for the copyright
+            $(".current-year").text(new Date().getFullYear());
+        </script>
+    </body>
 </html>
